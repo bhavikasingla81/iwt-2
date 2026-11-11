@@ -1,0 +1,125 @@
+:root {
+  --forest: #173e35;
+  --gold: #dfac53;
+}
+main a:not(.btn) {
+  color: #17573f;
+}
+body {
+  color: #24392f;
+  background: #fffdf5;
+  font:
+    16px/1.7 system-ui,
+    sans-serif;
+}
+.club-nav,
+.club-footer {
+  background: var(--forest);
+  color: white;
+}
+.club-footer {
+  padding: 24px 0;
+  margin-top: 40px;
+}
+.hero {
+  background: #edf4e9;
+  padding: 55px 0;
+}
+.hero h1 {
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  line-height: 1.15;
+  color: var(--forest);
+}
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+.eyebrow {
+  color: #57692c;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+.btn-club {
+  background: var(--forest);
+  color: white;
+  border: 2px solid var(--forest);
+}
+.btn-club:hover,
+.btn-club:focus {
+  background: #285d4e;
+  color: white;
+}
+.club-card {
+  border-top: 4px solid var(--gold);
+  height: 100%;
+}
+.section-title {
+  color: var(--forest);
+  margin-bottom: 20px;
+}
+.event-meta {
+  color: #52634e;
+}
+.form-panel {
+  max-width: 760px;
+  background: white;
+  border: 1px solid #ced8c8;
+  border-radius: 10px;
+  padding: 28px;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #9c4f00;
+  outline-offset: 4px;
+}
+.table-responsive {
+  border: 1px solid #d8e0d2;
+}
+@media (max-width: 600px) {
+  .hero {
+    padding: 30px 0;
+  }
+  .form-panel {
+    padding: 18px;
+  }
+}
+
+/* Native details/summary provides an accessible mobile menu without JavaScript. */
+.desktop-links {
+  flex-direction: row;
+  gap: 24px;
+  margin-left: auto;
+}
+.mobile-menu {
+  display: none;
+}
+.mobile-menu summary {
+  cursor: pointer;
+  color: white;
+  padding: 8px 12px;
+  border: 1px solid #8da99c;
+  border-radius: 5px;
+  width: max-content;
+}
+.mobile-menu summary:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+@media (max-width: 767px) {
+  .desktop-links {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+  }
+  .mobile-menu .navbar-nav {
+    padding-top: 12px;
+    gap: 4px;
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Join Us | Campus Coding Club</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark club-nav" aria-label="Club navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Campus Coding Club</a>
+        <ul class="navbar-nav desktop-links">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" href="join.html" aria-current="page">Join Us</a>
+          </li>
+        </ul>
+        <details class="mobile-menu">
+          <summary>Menu</summary>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" href="join.html" aria-current="page">Join Us</a>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </nav>
+    <main class="container py-5">
+      <h1 class="section-title">Join the Community</h1>
+      <p>Choose an activity and tell us what you would like to learn.</p>
+      <p id="demo-note" class="text-secondary">
+        HTML form demonstration: required fields are checked by your browser. The next page is a
+        static confirmation; no registration is saved.
+      </p>
+      <form id="join-form" class="form-panel" action="confirmation.html" method="get">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="name">Full name</label
+            ><input
+              class="form-control"
+              id="name"
+              type="text"
+              autocomplete="name"
+              minlength="3"
+              maxlength="60"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="email">Email</label
+            ><input class="form-control" id="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="interest">Interested activity</label
+            ><select class="form-select" id="interest" required>
+              <option value="">Choose an activity</option>
+              <option>Web workshop</option>
+              <option>Coding challenge</option>
+              <option>Project showcase</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="goal">Learning goal (optional)</label
+            ><textarea class="form-control" id="goal" rows="3" maxlength="250"></textarea>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" id="confirm" type="checkbox" required /><label
+                class="form-check-label"
+                for="confirm"
+                >I understand this is a demonstration registration.</label
+              >
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-club" type="submit">Register interest</button
+            ><button class="btn btn-outline-secondary ms-2" type="reset">Reset</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer class="club-footer">
+      <div class="container">
+        <p class="mb-0">Campus Coding Club | Learn, practise and build together.</p>
+      </div>
+    </footer>
+  </body>
+</html>
